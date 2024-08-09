@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&display=swap');
+
+:root {
+    --cor-de-fundo: #000000;
+    --cor-botão: #3fce2c;
+    --cor-link: #4d2e11;
+    --cor-texto: #208a00;
+    --font-principal: 'Josefin Slab', serif;
+    --font-weight-bold: 800;
+    --font-weight-regular: 500;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-texto);
+    font-family: var(--font-principal);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo h1 {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    color: #1c6800;
+}
+
+.imagem__intro {
+    width: 500px;
+    margin: 20px auto;
+}
+
+.container {
+    text-align: center;
+    display: inline-block;
+}
+
+.texto-introdução {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texto__intro {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #57b421;
+    line-height: 1.6;
+}
+
+.description__div--area-1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description__h3--text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #46aa41;
+    line-height: 1.6;
+}
+
+.img--gif {
+    width: 400px;
+}
+
+.footer {
+    color: #36ec16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.button {
+    font-size: 20px;
+    background-color: #145522;
+    color: rgb(32, 28, 28);
+    padding: 10px 20px;
+    border: 5px solid #145522;
+    border-radius: 60px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    font-family: 'Josefin Slab', serif;
+    font-style: italic;
+}
+
+.button img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.button.clicked {
+    border-color: #244d11;
+}
+
+.hidden {
+    display: none;
+}
+
+.info {
+    margin-top: 20px;
+    border: 2px solid #073318;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.info p {
+    margin: 10px 0;
+}
+
+.close-button {
+    background-color: #0f6e2c;
+    color: rgb(26, 25, 25);
+    padding: 5px 10px;
+    border: 2px solid #0e794c;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #103509;
+}
+
+@keyframes startHeader {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes startAItem {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes startH1Text2 {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes descriptionH3Text1 {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes accessibleButtons {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes footerAReturn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

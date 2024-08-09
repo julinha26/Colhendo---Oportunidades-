@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agricultura, Tecnologia e Sustentabilidade</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>   
+        <!-- Introdução -->
+        <section class="container start__section" id="inicio">
+            <header class="start__header anim--start__header">
+                <ul class="start__ul--items-list">
+                    <!-- Lista de itens pode ser adicionada aqui -->
+                </ul>
+            </header>
+
+            <div class="titulo">
+                <h1 class="titulo">DO CAMPO A CIDADE COLHENDO OPORTUNIDADES</h1>
+                <img class="imagem__intro" src="telefone.png" alt="telefone">
+                <h1 class="start__h1--text start__h1-mundo anim--start__h1--text-2"></h1>
+            </div>
+        </section>
+        
+        <section class="container__descrição" id="intro">
+            <span></span>
+            <div class="texto-introdução">
+                <h3 class="texto__intro">A tecnologia teve um impacto extremamente positivo na agricultura do interior, trazendo inovações e facilitando a vida dos agricultores.</h3>
+            </div>
+            <span></span> <span></span> <span></span>
+            <span></span>
+            <div class="description__div--area-1">
+                <h3 class="description__h3--text description__h3--position-1 anim--description__h3-text-1">
+                    Colher oportunidades do campo e levá-las para a cidade é como trazer um pedaço da natureza para o ambiente urbano. A transição do campo para a cidade traz consigo não apenas produtos frescos e saudáveis, mas também a conexão com as raízes e a valorização do trabalho árduo dos agricultores. Feiras locais, mercados de agricultores e iniciativas de agricultura urbana são pontes que aproximam esses dois mundos, promovendo a sustentabilidade, a diversidade alimentar e a consciência sobre a origem dos alimentos. É nessa troca entre o campo e a cidade que encontramos oportunidades para nutrir o corpo, a mente e o espírito, criando laços entre comunidades e celebrando a riqueza da terra em todos os lugares.
+                </h3>
+            </div>
+            <span></span> <span></span> <span></span>
+            <div class="botoes__images">
+                <img class="img--gif" src="tractor-farming.gif" alt="trator">
+            </div>
+        </section>
+        
+        <button class="button" onclick="showInfo(1)">
+            <img src="drone-flying.gif" alt="Imagem 1">
+            Jovens na Agrotecnologia
+        </button>
+        
+        <button class="button" onclick="showInfo(3)">
+            <img src="colheita.jpg" alt="Imagem 3">
+            Sustentabilidade no Campo
+        </button>
+        
+        <div class="info" id="info1">
+            <div class="description__div--area-1">
+                <h3 class="description__h3--text description__h3--position-1 anim--description__h3-text-1">
+                    Os jovens na mudança da tecnologia e da agricultura são agentes de uma revolução verde digital, combinando tradição e inovação para cultivar um futuro sustentável. Com ferramentas como drones, sensores e aplicativos agrícolas, eles otimizam processos, monitoram safras e promovem a agricultura de precisão. Essa nova geração de agricultores digitais está redefinindo o campo, trazendo eficiência, sustentabilidade e conectividade para garantir a segurança alimentar global e o equilíbrio ambiental.
+                </h3>
+                <span></span> <span></span> <span></span>
+                <button class="close-button" onclick="hideInfo(1)">Fechar</button>
+            </div>
+        </div>
+        
+        <div class="info" id="info3">
+            <div class="description__div--area-1">
+                <h3 class="description__h3--text description__h3--position-1 anim--description__h3-text-1">
+                    A agricultura sustentável busca produzir alimentos de forma a preservar os recursos naturais, reduzir o impacto ambiental e garantir a qualidade de vida dos agricultores. Um exemplo é o projeto de um grupo de mulheres com parceria de uma cooperativa da Lapa, com a finalidade dessas verduras e legumes serem usados na merenda escolar de uma escola local. Nesse projeto, é aplicado o conceito de sustentabilidade, sem o uso de insumos, ou seja, totalmente orgânico.
+                </h3>
+                <span></span> <span></span> <span></span>
+                <button class="close-button" onclick="hideInfo(3)">Fechar</button>
+            </div>
+        </div>
+    </header>
+    
+    <footer>
+        <div class="footer">
+            <p>Feito por Julia Corrêa - para Agrinho 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        function showInfo(num) {
+            var info = document.getElementById('info' + num);
+            info.style.display = 'block';
+        }
+        
+        function hideInfo(num) {
+            var info = document.getElementById('info' + num);
+            info.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
